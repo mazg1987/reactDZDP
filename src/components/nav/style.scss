@@ -1,0 +1,27 @@
+.am-navbar{
+    background-color: #cf0722;
+    color:white;
+    position: fixed;
+    top: 0px;
+    height: 45px;
+    width: 100%;
+
+    .am-navbar-left{
+        svg{
+            margin-top: -3px;
+            margin-left: 3px;
+            vertical-align: top;
+        }
+    }
+
+    .am-navbar-title{
+        .am-search{
+            width: 200px;
+            background-color: transparent;
+
+            .am-search-cancel{
+                display: none;
+            }
+        }
+    }
+}

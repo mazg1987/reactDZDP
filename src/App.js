@@ -1,25 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import RouterMap from '@/router'
 
-function App() {
+//引入项目依赖的静态资源（css文件）
+import '@/static/css/common.css'
+import '@/static/css/font.css'
+
+//引入nav和tab组件
+import ToggleNav from '@/components/toggleNav'
+import Tab from '@/components/tab'
+import { HashRouter } from 'react-router-dom';
+
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <ToggleNav></ToggleNav>
+      <RouterMap></RouterMap>
+      <Tab></Tab>
+    </HashRouter>
   );
 }
 
