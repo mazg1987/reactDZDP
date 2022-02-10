@@ -13,7 +13,7 @@
     "http-proxy-middleware": "^1.0.3",
     "mocker-api": "^1.13.1",
     "mockjs": "^1.1.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "qs": "^6.9.3",
     "react": "^16.13.1",
     "react-app-rewired": "^2.1.5",
